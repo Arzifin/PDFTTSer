@@ -16,7 +16,9 @@ Now you can open your web browser and head to http://localhost:5000 to access th
 Enjoy! Alternatively you can launch the program with Docker, if you so desire.
 
 ### Launching with Docker
-- Upon having downloaded the application, head to its root directory with the terminal
+- For this option you'll need to have Docker installed.
+  - https://docs.docker.com/get-docker/ 
+- Upon having downloaded the application, head to its root directory with the terminal.
 - Type into terminal:
   - docker-compose up 
 
