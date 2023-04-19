@@ -13,3 +13,12 @@ The app is containerized for my own convinience.
   - python app.py
 
 Now you can open your web browser and head to http://localhost:5000 to access the application.
+Enjoy! Alternatively you can launch the program with Docker, if you so desire.
+
+### Launching with Docker
+- Upon having downloaded the application, head to its root directory with the terminal
+- Type into terminal:
+  - docker-compose up 
+
+Now the containers and images should be up and working.
+You should see the application at http://localhost:5000.
