@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 30px 0;
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);*/
+}
+
+input[type="file"] {
+    /*flex-grow: 1;*/
+    /*margin-bottom: 20px;*/
+    margin: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    /*width: 100%;*/
+    background-color: #f8f8f8;
+}
+
+input[type="submit"] {
+    flex-grow: 1;
+    /*display: block;*/
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    /*font-size: clamp(1rem, 3vw + 1rem, 4rem);*/
+    position: relative;
+    width: max-content;
+    margin: auto;
+    margin-bottom: 10px;
+    /*padding: 10px;*/
+    font-size: 35px;
+}
+
+h1::before,
+h1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    
+}
+
+h1::before {
+    background: #f2f2f2;
+    animation: typewriter 0.7s steps(9) forwards;
+    height: inherit;
+}
+
+h1::after {
+    width: 0.11em;
+    background: black;
+    animation: typewriter 0.7s steps(9) forwards, blink .75s infinite;
+    
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}

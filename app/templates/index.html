@@ -1,10 +1,17 @@
 <!doctype html>
 <html>
+<head>
+    <meta charset="UTF-8">
+    <title>PDF Converter</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
 <body>
-    <h1>Upload PDF</h1>
-    <form method="POST" enctype="multipart/form-data">
-        <input type="file" name="file">
-        <input type="submit" value="Convert to Speech">
-    </form>
+    <div id="container">
+        <h1 id="typewriter">Convert your PDF</h1>
+        <form method="POST" enctype="multipart/form-data">
+            <input type="file" name="file">
+            <input type="submit" value="Convert to Speech">
+        </form>
+    </div>
 </body>
 </html>
